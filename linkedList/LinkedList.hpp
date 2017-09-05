@@ -129,13 +129,13 @@ bool LinkedList<T>::removeBack()
 			m_front = nullptr;
 			delete lastNode;
 			isRemoved = true;
-		//	m_size--;
+			m_size--;
 	}
 	else{
 		secondintoLast->setNext(nullptr);
 		delete lastNode;
 		isRemoved = true;
-		//m_size--;
+		m_size--;
 	}
 
 	return(isRemoved);
